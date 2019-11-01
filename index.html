@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Smolt Estimation and Analytics</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan N. Kinzer" />
+    <link href="index_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="index_files/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <script src="index_files/htmlwidgets-1.3/htmlwidgets.js"></script>
+    <script src="index_files/jquery-1.12.4/jquery.min.js"></script>
+    <link href="index_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+    <script src="index_files/datatables-binding-0.8/datatables.js"></script>
+    <link href="index_files/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="index_files/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
+    <script src="index_files/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
+    <link href="index_files/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+    <script src="index_files/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+    <link rel="stylesheet" href="my-theme.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: inverse, center, middle
+
+# Smolt Estimation and Analytics
+
+&lt;img src="figures/fish.png" width= "75%"/&gt;
+
+## Session 2
+
+.large[Ryan N. Kinzer | Smolt Monitoring Workshop | 6th &amp; 7th November 2019]
+
+---
+
+&lt;!-- background-image: url(index.png) --&gt;
+&lt;!-- background-position: 50% 125% --&gt;
+&lt;!-- background-size: 25% --&gt;
+&lt;!-- layout: true --&gt;
+---
+
+
+
+class: center, middle
+
+# Why?
+
+---
+class: center, middle
+# To Learn
+
+---
+
+# When science goes awry...
+
+--
+.right[
+# ...or we get lazy.
+]
+
+--
+
+Lincoln-Peterson Equation:
+
+$$ 
+\hat{N} = \frac{C * M}{R}
+$$
+
+
+--
+
+.pull-left[
+## Data
+<div id="htmlwidget-09cc49a10651d6980d41" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-09cc49a10651d6980d41">{"x":{"filter":"none","data":[["1","2"],[500,1000],[400,50],[200,5]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>C<\/th>\n      <th>M<\/th>\n      <th>R<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+]
+
+--
+
+.pull-right[
+## Which is correct?
+
+`$$\hat{N} = \frac{500 * 400}{200} + \frac{1000 * 50}{5} = 11,000$$`
+`$$\hat{N} = \frac{600 * 450}{205} = 3,293$$`
+
+]
+
+---
+
+class: middle, inverse
+
+## Would it matter if...
+
+--
+
+.center[
+the groups were captured on &lt;u&gt;different days&lt;/u&gt;, 
+]
+
+--
+
+.center[
+the groups were captured on the &lt;u&gt;same day&lt;/u&gt;, 
+]
+
+--
+
+.center[
+or, what if they were from &lt;u&gt;different size classes&lt;/u&gt;.
+]
+
+
+---
+
+## Purpose of this Session
+
+.left[
+Learn from our colleagues
+]
+
+--
+
+.left[
+Learn from our invited experts
+]
+
+--
+
+.left[
+Learn from our mistakes
+]
+.center[
+&lt;img src="figures/Constructive-Criticism-cartoon.jpg" width= "45%"/&gt;
+]
+
+
+---
+
+class: inverse, middle, center
+
+# Accurate and Precise Estimates
+
+---
+## Imnaha River MY18 Smolt Data
+
+&lt;img src="figures/eff_plot.png"/&gt;
+
+---
+
+## Imnaha River Results
+
+
+
+.pull-left[
+&lt;br&gt;
+<div id="htmlwidget-6bd89ee4436d2e95f113" style="width:100px;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6bd89ee4436d2e95f113">{"x":{"filter":"none","data":[["9","8","7","6","5","4","3","2","1"],["?","daily","2/daily","9","7","11","13","9","11"],[null,null,3704,3696,3673,4006,3701,2974,3700],[null,null,2679,2679,2679,2679,2674,2679,2685],[null,null,295,287,287,295,290,295,298]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>analyst<\/th>\n      <th>strata<\/th>\n      <th>captures<\/th>\n      <th>marks<\/th>\n      <th>recaptures<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"targets":[0,1,2,3,4],"className":"dt-center"}],"initComplete":"function(settings, json){\n$(this.api().table().header()).css({'font-size': '50%', 'background-color':'#000',\n                              'color':'#fff'});\n}","order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'50%'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'50%'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'50%'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'50%'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'font-size':'50%'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+]
+
+.pull-right[
+&lt;br&gt;
+&lt;img src='figures/analyst_fig.png'/&gt;
+]
+
+---
+## Simulated  Outmigrant Data
+
+&lt;img src="figures/sig_fig.png"/&gt;
+
+---
+## Simulation - 1000 Data Sets
+
+.pull-left[
+.large[Parameters]
+- Population Sizes
+  - 1,000
+  - 50,000
+  - 100,000
+  - 250,000
+  
+- Average Efficiency
+  - 0.05
+  - 0.10
+  - 0.15
+  - 0.25
+  - 0.50
+
+- Marking Rate
+  - 100%
+]
+
+--
+
+.pull-right[
+.large[Analyzed with Submitted Methods]
+
+- Baily Modification ($\ge$ 7 recaps)
+  - Pooled Season
+  - Bi-weekly strata
+  - Weekly strata
+  - Collapsed days
+  
+- Modeled Efficiency Logistic Regression (Daily)
+- GAM with P-Spline (Daily)
+]
+
+---
+
+## Estimator Bias
+
+&lt;img src="figures/bias_fig.png"/&gt;
+
+---
+
+## Estimator Variability
+&lt;img src="figures/CV_fig.png"/&gt;
+
+---
+
+## Estimator Coverage (alpha = 0.05)
+
+&lt;img src="figures/coverage_fig.png"/&gt;
+
+---
+class: inverse, center, middle
+
+# Questions
+
+&lt;!-- --- --&gt;
+&lt;!-- ## Differences --&gt;
+&lt;!--   - Exclude Recaptures --&gt;
+&lt;!--   - Size Classes --&gt;
+&lt;!--   - Life Stages and Calendar Dates --&gt;
+&lt;!--   - Interpolation --&gt;
+
+&lt;!-- ## Questions --&gt;
+&lt;!--   - Did anyone truncate dates for smolt abundance? --&gt;
+&lt;!--   - Did anyone interpolate catch for non-operational days? --&gt;
+&lt;!--   - Did anyone stratify; efficiency, days, flow, other? --&gt;
+&lt;!--   - Did anyone model efficiency based on a covariate; flow potentially --&gt;
+
+
+  
+&lt;!-- ## Session Outline --&gt;
+&lt;!-- - Bruce Barnett and Tim Copeland (IDFG) --&gt;
+&lt;!-- - John Rohrback (CTCR) --&gt;
+&lt;!-- - Lora Tennant (NPT) --&gt;
+&lt;!-- - Carrie Crump (CTUIR) --&gt;
+&lt;!-- - Jeremy Henderson (ODFW) --&gt;
+&lt;!-- - (WDFW) --&gt;
+&lt;!-- - Wrap Up --&gt;
+&lt;!-- - Tim Ressegiue (YNF) --&gt;
+&lt;!-- - Martin Liermann (NOAA) --&gt;
+&lt;!-- - Dan Rawding (WDFW) --&gt;
+&lt;!-- - Open Discussion --&gt;
+
+&lt;!-- - Understand Differences and Reasons --&gt;
+&lt;!-- - Find Consistencies. Are the numbers comparable? --&gt;
+&lt;!-- - How does our differences affect other metrics and managment decisions? --&gt;
+&lt;!-- - Can we improve? Should we recommend improvements, do we need to demand change? --&gt;
+
+&lt;!-- ## Estimator Summary --&gt;
+&lt;!--   - Time or Efficiency Stratification --&gt;
+&lt;!--     - Stratified Chapman (Volkhardt 2007) --&gt;
+&lt;!--     - Stratifed Baily with Parametric Bootstrap CIs (Steinhorst et al. 2004) --&gt;
+&lt;!--   - Modeled Efficiency --&gt;
+&lt;!--     - Logistic Regression --&gt;
+&lt;!--     - Bayesian P-Spline Model (Bonner and Schwarz 2011) --&gt;
+&lt;!--     - Multi-Year Bayesian Mark-Recapture (Oldemeyer et al. 2018) --&gt;
+
+&lt;!-- ## Abundance Estimation --&gt;
+&lt;!-- - Index or Trend? --&gt;
+&lt;!-- - Absolute Abundance? --&gt;
+
+&lt;!-- - Does a negative or postive bias matter? --&gt;
+&lt;!-- - Should the error be minimized--at what cost? --&gt;
+&lt;!-- - What is the risk for decision making? --&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create();
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
