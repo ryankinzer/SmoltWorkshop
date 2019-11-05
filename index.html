@@ -26,9 +26,9 @@ class: inverse, center, middle
 
 &lt;img src="figures/fish.png" width= "75%"/&gt;
 
-## Session 2
+## Session 2 - Day 1
 
-.large[Ryan N. Kinzer | Smolt Monitoring Workshop | 6th &amp; 7th November 2019]
+.large[Ryan N. Kinzer | Smolt Monitoring Workshop | 6th November 2019]
 
 ---
 
@@ -46,7 +46,7 @@ class: center, middle
 
 ---
 class: center, middle
-# To Learn
+# To Learn.
 
 ---
 
@@ -70,8 +70,8 @@ $$
 
 .pull-left[
 ## Data
-<div id="htmlwidget-09cc49a10651d6980d41" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-09cc49a10651d6980d41">{"x":{"filter":"none","data":[["1","2"],[500,1000],[400,50],[200,5]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>C<\/th>\n      <th>M<\/th>\n      <th>R<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-55daccd755181abf5320" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-55daccd755181abf5320">{"x":{"filter":"none","data":[["1","2"],[500,1000],[400,50],[200,5]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>C<\/th>\n      <th>M<\/th>\n      <th>R<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 ]
 
 --
@@ -152,14 +152,60 @@ class: inverse, middle, center
 
 .pull-left[
 &lt;br&gt;
-<div id="htmlwidget-6bd89ee4436d2e95f113" style="width:100px;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-6bd89ee4436d2e95f113">{"x":{"filter":"none","data":[["9","8","7","6","5","4","3","2","1"],["?","daily","2/daily","9","7","11","13","9","11"],[null,null,3704,3696,3673,4006,3701,2974,3700],[null,null,2679,2679,2679,2679,2674,2679,2685],[null,null,295,287,287,295,290,295,298]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>analyst<\/th>\n      <th>strata<\/th>\n      <th>captures<\/th>\n      <th>marks<\/th>\n      <th>recaptures<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"targets":[0,1,2,3,4],"className":"dt-center"}],"initComplete":"function(settings, json){\n$(this.api().table().header()).css({'font-size': '50%', 'background-color':'#000',\n                              'color':'#fff'});\n}","order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'50%'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'50%'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'50%'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'50%'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'font-size':'50%'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+<div id="htmlwidget-fc2ab76c482082b8902c" style="width:100px;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-fc2ab76c482082b8902c">{"x":{"filter":"none","data":[["9","8","7","6","5","4","3","2","1"],["?","daily","2/daily","9","7","11","13","9","11"],[null,null,3704,3696,3673,4006,3701,2974,3700],[null,null,2679,2679,2679,2679,2674,2679,2685],[null,null,295,287,287,295,290,295,298]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>analyst<\/th>\n      <th>strata<\/th>\n      <th>captures<\/th>\n      <th>marks<\/th>\n      <th>recaptures<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"targets":[0,1,2,3,4],"className":"dt-center"}],"initComplete":"function(settings, json){\n$(this.api().table().header()).css({'font-size': '50%', 'background-color':'#000',\n                              'color':'#fff'});\n}","order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'50%'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'50%'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'50%'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'50%'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'font-size':'50%'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
 ]
 
 .pull-right[
 &lt;br&gt;
 &lt;img src='figures/analyst_fig.png'/&gt;
 ]
+
+---
+class: inverse
+
+.center[
+# A few items to think about...
+]
+
+- Mark/recapture assumptions
+  1. closed population
+  2. equal probability of capture
+  3. marks are not lost and recorded correctly
+  4. independence
+  
+- How do the differences affect other fish metrics and managment decisions?  
+
+- Reported abundance; index/trend or absolute abundance....are they consistent and does it matter?
+
+- Missing days...should we interpolate catch?
+
+---
+
+## Session 2 Presenters
+
+### Day 1
+- Bruce Barnett, Idaho Department of Fish and Game
+- John Rohrback, Colville Tribes Fish and Wildlife Program
+- Lora Tennant, Nez Perce Tribe
+- Carrie Crump, Confederated Tribes of Umatilla Indian Reservation
+- Jeremy Henderson, Oregon Department of Fish and Wildlife
+- TBD, Washington Department of Fish and Wildlife
+
+### Day 2
+- Tim Ressegiue, Yakima Nation Fisheries
+- Martin Liermann, NOAA - Northwest Fisheries Science Center
+- Dan Rawding, Washington Department of Fish and Wildlife
+
+---
+
+class: inverse, center, middle
+
+## Session 2 - Day 1
+
+&lt;img src="figures/fish.png" width= "50%"/&gt;
+
+## Wrap-Up
 
 ---
 ## Simulated  Outmigrant Data
@@ -170,9 +216,9 @@ class: inverse, middle, center
 ## Simulation - 1000 Data Sets
 
 .pull-left[
-.large[Parameters]
+### Parameters
 - Population Sizes
-  - 1,000
+  - 10,000
   - 50,000
   - 100,000
   - 250,000
@@ -191,9 +237,9 @@ class: inverse, middle, center
 --
 
 .pull-right[
-.large[Analyzed with Submitted Methods]
+### Analyzed with Submitted Methods
 
-- Baily Modification ($\ge$ 7 recaps)
+- Baily Modification ( `\(\ge\)` 7 recaps)
   - Pooled Season
   - Bi-weekly strata
   - Weekly strata
@@ -216,64 +262,42 @@ class: inverse, middle, center
 
 ---
 
-## Estimator Coverage (alpha = 0.05)
+##Estimator Coverage ( `\(\alpha = 0.05\)` )
 
 &lt;img src="figures/coverage_fig.png"/&gt;
 
 ---
+
+class: inverse, middle, center
+
+# Thank you for listening.
+
+---
 class: inverse, center, middle
 
-# Questions
+# Smolt Estimation and Analytics
 
-&lt;!-- --- --&gt;
-&lt;!-- ## Differences --&gt;
-&lt;!--   - Exclude Recaptures --&gt;
-&lt;!--   - Size Classes --&gt;
-&lt;!--   - Life Stages and Calendar Dates --&gt;
-&lt;!--   - Interpolation --&gt;
+&lt;img src="figures/fish.png" width= "75%"/&gt;
 
-&lt;!-- ## Questions --&gt;
-&lt;!--   - Did anyone truncate dates for smolt abundance? --&gt;
-&lt;!--   - Did anyone interpolate catch for non-operational days? --&gt;
-&lt;!--   - Did anyone stratify; efficiency, days, flow, other? --&gt;
-&lt;!--   - Did anyone model efficiency based on a covariate; flow potentially --&gt;
+## Session 2 - Day 2
 
+.large[Ryan N. Kinzer | Smolt Monitoring Workshop | 7th November 2019]
 
-  
-&lt;!-- ## Session Outline --&gt;
-&lt;!-- - Bruce Barnett and Tim Copeland (IDFG) --&gt;
-&lt;!-- - John Rohrback (CTCR) --&gt;
-&lt;!-- - Lora Tennant (NPT) --&gt;
-&lt;!-- - Carrie Crump (CTUIR) --&gt;
-&lt;!-- - Jeremy Henderson (ODFW) --&gt;
-&lt;!-- - (WDFW) --&gt;
-&lt;!-- - Wrap Up --&gt;
-&lt;!-- - Tim Ressegiue (YNF) --&gt;
-&lt;!-- - Martin Liermann (NOAA) --&gt;
-&lt;!-- - Dan Rawding (WDFW) --&gt;
-&lt;!-- - Open Discussion --&gt;
+---
+## Session 2 Presenters
 
-&lt;!-- - Understand Differences and Reasons --&gt;
-&lt;!-- - Find Consistencies. Are the numbers comparable? --&gt;
-&lt;!-- - How does our differences affect other metrics and managment decisions? --&gt;
-&lt;!-- - Can we improve? Should we recommend improvements, do we need to demand change? --&gt;
+### Day 1
+- Bruce Barnett, Idaho Department of Fish and Game
+- John Rohrback, Colville Tribes Fish and Wildlife Program
+- Lora Tennant, Nez Perce Tribe
+- Carrie Crump, Confederated Tribes of Umatilla Indian Reservation
+- Jeremy Henderson, Oregon Department of Fish and Wildlife
+- TBD, Washington Department of Fish and Wildlife
 
-&lt;!-- ## Estimator Summary --&gt;
-&lt;!--   - Time or Efficiency Stratification --&gt;
-&lt;!--     - Stratified Chapman (Volkhardt 2007) --&gt;
-&lt;!--     - Stratifed Baily with Parametric Bootstrap CIs (Steinhorst et al. 2004) --&gt;
-&lt;!--   - Modeled Efficiency --&gt;
-&lt;!--     - Logistic Regression --&gt;
-&lt;!--     - Bayesian P-Spline Model (Bonner and Schwarz 2011) --&gt;
-&lt;!--     - Multi-Year Bayesian Mark-Recapture (Oldemeyer et al. 2018) --&gt;
-
-&lt;!-- ## Abundance Estimation --&gt;
-&lt;!-- - Index or Trend? --&gt;
-&lt;!-- - Absolute Abundance? --&gt;
-
-&lt;!-- - Does a negative or postive bias matter? --&gt;
-&lt;!-- - Should the error be minimized--at what cost? --&gt;
-&lt;!-- - What is the risk for decision making? --&gt;
+### Day 2
+- Tim Ressegiue, Yakima Nation Fisheries
+- Martin Liermann, NOAA - Northwest Fisheries Science Center
+- Dan Rawding, Washington Department of Fish and Wildlife
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

@@ -9,11 +9,6 @@ output:
     nature:
       titleSlideClass: ["left", "middle", "inverse"]
     css: [default, default-fonts, my-theme.css]
-
-  #slidy_presentation:
-  #  footer: Nez Perce Tribe, Department of Fisheries Resources Management
-  #  duration: 15
-    #css: styles.css
 ---
 class: inverse, center, middle
 
@@ -21,9 +16,9 @@ class: inverse, center, middle
 
 <img src="figures/fish.png" width= "75%"/>
 
-## Session 2
+## Session 2 - Day 1
 
-.large[Ryan N. Kinzer | Smolt Monitoring Workshop | 6th & 7th November 2019]
+.large[Ryan N. Kinzer | Smolt Monitoring Workshop | 6th November 2019]
 
 ---
 
@@ -48,7 +43,7 @@ class: center, middle
 
 ---
 class: center, middle
-# To Learn
+# To Learn.
 
 ---
 
@@ -188,6 +183,52 @@ load('../data/analyst_results.rda')
 ]
 
 ---
+class: inverse
+
+.center[
+# A few items to think about...
+]
+
+- Mark/recapture assumptions
+  1. closed population
+  2. equal probability of capture
+  3. marks are not lost and recorded correctly
+  4. independence
+  
+- How do the differences affect other fish metrics and managment decisions?  
+
+- Reported abundance; index/trend or absolute abundance....are they consistent and does it matter?
+
+- Missing days...should we interpolate catch?
+
+---
+
+## Session 2 Presenters
+
+### Day 1
+- Bruce Barnett, Idaho Department of Fish and Game
+- John Rohrback, Colville Tribes Fish and Wildlife Program
+- Lora Tennant, Nez Perce Tribe
+- Carrie Crump, Confederated Tribes of Umatilla Indian Reservation
+- Jeremy Henderson, Oregon Department of Fish and Wildlife
+- TBD, Washington Department of Fish and Wildlife
+
+### Day 2
+- Tim Ressegiue, Yakima Nation Fisheries
+- Martin Liermann, NOAA - Northwest Fisheries Science Center
+- Dan Rawding, Washington Department of Fish and Wildlife
+
+---
+
+class: inverse, center, middle
+
+## Session 2 - Day 1
+
+<img src="figures/fish.png" width= "50%"/>
+
+## Wrap-Up
+
+---
 ## Simulated  Outmigrant Data
 
 <img src="figures/sig_fig.png"/>
@@ -196,9 +237,9 @@ load('../data/analyst_results.rda')
 ## Simulation - 1000 Data Sets
 
 .pull-left[
-.large[Parameters]
+### Parameters
 - Population Sizes
-  - 1,000
+  - 10,000
   - 50,000
   - 100,000
   - 250,000
@@ -217,9 +258,9 @@ load('../data/analyst_results.rda')
 --
 
 .pull-right[
-.large[Analyzed with Submitted Methods]
+### Analyzed with Submitted Methods
 
-- Baily Modification ($\ge$ 7 recaps)
+- Baily Modification ( $\ge$ 7 recaps)
   - Pooled Season
   - Bi-weekly strata
   - Weekly strata
@@ -242,62 +283,39 @@ load('../data/analyst_results.rda')
 
 ---
 
-## Estimator Coverage (alpha = 0.05)
+##Estimator Coverage ( $\alpha = 0.05$ )
 
 <img src="figures/coverage_fig.png"/>
 
 ---
+
+class: inverse, middle, center
+
+# Thank you for listening.
+
+---
 class: inverse, center, middle
 
-# Questions
+# Smolt Estimation and Analytics
 
-<!-- --- -->
-<!-- ## Differences -->
-<!--   - Exclude Recaptures -->
-<!--   - Size Classes -->
-<!--   - Life Stages and Calendar Dates -->
-<!--   - Interpolation -->
+<img src="figures/fish.png" width= "75%"/>
 
-<!-- ## Questions -->
-<!--   - Did anyone truncate dates for smolt abundance? -->
-<!--   - Did anyone interpolate catch for non-operational days? -->
-<!--   - Did anyone stratify; efficiency, days, flow, other? -->
-<!--   - Did anyone model efficiency based on a covariate; flow potentially -->
+## Session 2 - Day 2
 
+.large[Ryan N. Kinzer | Smolt Monitoring Workshop | 7th November 2019]
 
-  
-<!-- ## Session Outline -->
-<!-- - Bruce Barnett and Tim Copeland (IDFG) -->
-<!-- - John Rohrback (CTCR) -->
-<!-- - Lora Tennant (NPT) -->
-<!-- - Carrie Crump (CTUIR) -->
-<!-- - Jeremy Henderson (ODFW) -->
-<!-- - (WDFW) -->
-<!-- - Wrap Up -->
-<!-- - Tim Ressegiue (YNF) -->
-<!-- - Martin Liermann (NOAA) -->
-<!-- - Dan Rawding (WDFW) -->
-<!-- - Open Discussion -->
+---
+## Session 2 Presenters
 
-<!-- - Understand Differences and Reasons -->
-<!-- - Find Consistencies. Are the numbers comparable? -->
-<!-- - How does our differences affect other metrics and managment decisions? -->
-<!-- - Can we improve? Should we recommend improvements, do we need to demand change? -->
+### Day 1
+- Bruce Barnett, Idaho Department of Fish and Game
+- John Rohrback, Colville Tribes Fish and Wildlife Program
+- Lora Tennant, Nez Perce Tribe
+- Carrie Crump, Confederated Tribes of Umatilla Indian Reservation
+- Jeremy Henderson, Oregon Department of Fish and Wildlife
+- TBD, Washington Department of Fish and Wildlife
 
-<!-- ## Estimator Summary -->
-<!--   - Time or Efficiency Stratification -->
-<!--     - Stratified Chapman (Volkhardt 2007) -->
-<!--     - Stratifed Baily with Parametric Bootstrap CIs (Steinhorst et al. 2004) -->
-<!--   - Modeled Efficiency -->
-<!--     - Logistic Regression -->
-<!--     - Bayesian P-Spline Model (Bonner and Schwarz 2011) -->
-<!--     - Multi-Year Bayesian Mark-Recapture (Oldemeyer et al. 2018) -->
-
-<!-- ## Abundance Estimation -->
-<!-- - Index or Trend? -->
-<!-- - Absolute Abundance? -->
-
-<!-- - Does a negative or postive bias matter? -->
-<!-- - Should the error be minimized--at what cost? -->
-<!-- - What is the risk for decision making? -->
-
+### Day 2
+- Tim Ressegiue, Yakima Nation Fisheries
+- Martin Liermann, NOAA - Northwest Fisheries Science Center
+- Dan Rawding, Washington Department of Fish and Wildlife
