@@ -27,7 +27,6 @@ class: inverse, center, middle
 <!-- background-size: 25% -->
 <!-- layout: true -->
 ---
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 
@@ -85,7 +84,7 @@ df %>% select(C, M, R) %>% datatable(options = list(dom = 't'))
 ## Which is correct?
 
 $$\hat{N} = \frac{500 * 400}{200} + \frac{1000 * 50}{5} = 11,000$$
-$$\hat{N} = \frac{600 * 450}{205} = 3,293$$
+$$\hat{N} = \frac{1500 * 450}{205} = 3,293$$
 
 ]
 
@@ -282,7 +281,6 @@ class: inverse, center, middle
 <img src="figures/CV_fig.png"/>
 
 ---
-
 ##Estimator Coverage ( $\alpha = 0.05$ )
 
 <img src="figures/coverage_fig.png"/>

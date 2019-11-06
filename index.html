@@ -39,7 +39,6 @@ class: inverse, center, middle
 ---
 
 
-
 class: center, middle
 
 # Why?
@@ -70,8 +69,8 @@ $$
 
 .pull-left[
 ## Data
-<div id="htmlwidget-55daccd755181abf5320" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-55daccd755181abf5320">{"x":{"filter":"none","data":[["1","2"],[500,1000],[400,50],[200,5]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>C<\/th>\n      <th>M<\/th>\n      <th>R<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-200a059349c724a11254" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-200a059349c724a11254">{"x":{"filter":"none","data":[["1","2"],[500,1000],[400,50],[200,5]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>C<\/th>\n      <th>M<\/th>\n      <th>R<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 ]
 
 --
@@ -80,7 +79,7 @@ $$
 ## Which is correct?
 
 `$$\hat{N} = \frac{500 * 400}{200} + \frac{1000 * 50}{5} = 11,000$$`
-`$$\hat{N} = \frac{600 * 450}{205} = 3,293$$`
+`$$\hat{N} = \frac{1500 * 450}{205} = 3,293$$`
 
 ]
 
@@ -152,8 +151,8 @@ class: inverse, middle, center
 
 .pull-left[
 &lt;br&gt;
-<div id="htmlwidget-fc2ab76c482082b8902c" style="width:100px;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-fc2ab76c482082b8902c">{"x":{"filter":"none","data":[["9","8","7","6","5","4","3","2","1"],["?","daily","2/daily","9","7","11","13","9","11"],[null,null,3704,3696,3673,4006,3701,2974,3700],[null,null,2679,2679,2679,2679,2674,2679,2685],[null,null,295,287,287,295,290,295,298]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>analyst<\/th>\n      <th>strata<\/th>\n      <th>captures<\/th>\n      <th>marks<\/th>\n      <th>recaptures<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"targets":[0,1,2,3,4],"className":"dt-center"}],"initComplete":"function(settings, json){\n$(this.api().table().header()).css({'font-size': '50%', 'background-color':'#000',\n                              'color':'#fff'});\n}","order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'50%'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'50%'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'50%'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'50%'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'font-size':'50%'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+<div id="htmlwidget-3d01850c2b214aa747ae" style="width:100px;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3d01850c2b214aa747ae">{"x":{"filter":"none","data":[["9","8","7","6","5","4","3","2","1"],["?","daily","2/daily","9","7","11","13","9","11"],[null,null,3704,3696,3673,4006,3701,2974,3700],[null,null,2679,2679,2679,2679,2674,2679,2685],[null,null,295,287,287,295,290,295,298]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>analyst<\/th>\n      <th>strata<\/th>\n      <th>captures<\/th>\n      <th>marks<\/th>\n      <th>recaptures<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"targets":[0,1,2,3,4],"className":"dt-center"}],"initComplete":"function(settings, json){\n$(this.api().table().header()).css({'font-size': '50%', 'background-color':'#000',\n                              'color':'#fff'});\n}","order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'50%'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'50%'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'50%'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'50%'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'font-size':'50%'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
 ]
 
 .pull-right[
@@ -261,7 +260,6 @@ class: inverse, center, middle
 &lt;img src="figures/CV_fig.png"/&gt;
 
 ---
-
 ##Estimator Coverage ( `\(\alpha = 0.05\)` )
 
 &lt;img src="figures/coverage_fig.png"/&gt;
